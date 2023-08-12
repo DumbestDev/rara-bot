@@ -1,6 +1,7 @@
+![rarabot-placeholder-img](https://github.com/DumbestDev/rara-bot/blob/master/public/images/lala.jpeg)
+
 # Lalabot
 It's a racist discord bot currently in development. You probably shouldn't be here.
-![rarabot-placeholder-img](https://github.com/DumbestDev/rara-bot/blob/master/public/images/lala.jpeg)
 
 ## Commands
 You can run the following commands in the terminal:
