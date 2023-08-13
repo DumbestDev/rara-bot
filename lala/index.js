@@ -1,4 +1,5 @@
 const { Client, GatewayIntentBits, Collection } = require('discord.js');
+const fs = require('fs');
 const path = require('path');
 const errorHandler = require('../helpers/errorHandler');
 const readEvents = require('./readEvents');
