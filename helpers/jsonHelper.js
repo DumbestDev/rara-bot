@@ -48,7 +48,7 @@ module.exports = {
         fs.writeFileSync(jsonPath, updatedJson, 'utf8');
     },
 
-    findValue: (jsonPath = '', key = -1) => {
+    getValue: (jsonPath = '', key = -1) => {
         const json = fs.readFileSync(jsonPath, 'utf8');
         const content = JSON.parse(json);
 
@@ -56,7 +56,7 @@ module.exports = {
         else return null;
     },
 
-    findKey: (jsonPath = '', value = '') => {
+    getKey: (jsonPath = '', value = '') => {
         const json = fs.readFileSync(jsonPath, 'utf8');
         const content = JSON.parse(json);
         let result = null;
@@ -71,7 +71,7 @@ module.exports = {
         return result;
     },
 
-    findKeyByFieldValue: (jsonPath = '', fieldName = 'field', value = 'value') => {
+    getKeyByFieldValue: (jsonPath = '', fieldName = 'field', value = 'value') => {
         const json = fs.readFileSync(jsonPath, 'utf8');
         const content = JSON.parse(json);
         let result = null;

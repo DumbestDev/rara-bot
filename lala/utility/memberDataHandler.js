@@ -12,7 +12,7 @@ module.exports = {
         if (result != 'alreadyExists') 
             console.log(`Lala learned ${data.name}'s name! (${data.id})`);
         else 
-            this.updateMemberData(jsonHelper.findValue(jsonPath, data.id), data);
+            this.updateMemberData(jsonHelper.getValue(jsonPath, data.id), data);
         
     },
 
@@ -44,12 +44,12 @@ module.exports = {
 
     getNameFromID: function(discordID, isBot = false) {
         const jsonPath = this.getPath(isBot);
-        return jsonHelper.findValue(jsonPath, discordID).name;
+        return jsonHelper.getValue(jsonPath, discordID).name;
     },
 
     getIDFromTag: function(tag, isBot = false) {
         const jsonPath = this.getPath(isBot);
-        return jsonHelper.findKeyByFieldValue(jsonPath, 'tag', tag);
+        return jsonHelper.getKeyByFieldValue(jsonPath, 'tag', tag);
     },
 
     memberExists: function(discordID, isBot = false) {

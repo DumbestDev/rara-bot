@@ -3,14 +3,14 @@ const { Interaction, SlashCommandBuilder } = require("discord.js");
 
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName('asdasd')
-        .setDescription('Make Lala say "asdasd".'),
+        .setName('nword')
+        .setDescription('Make Lala say the n-word.'),
     
     /**
      * @param {Interaction} interaction the interaction that triggered the command
      */
     async execute(interaction) {
-        await interaction.reply('asdasd');
+        await interaction.reply('Nigger');
     }
 }
 

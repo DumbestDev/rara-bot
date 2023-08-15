@@ -1,6 +1,6 @@
 const { Client } = require('discord.js');
 const errorHandler = require('../../helpers/errorHandler');
-const dataHandler = require('./dataHandler');
+const dataHandler = require('./memberDataHandler');
 const normalizeString = require('../../helpers/normalizeString');
 
 function userSays(messageObj, id, ...strings) {
