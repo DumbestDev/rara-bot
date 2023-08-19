@@ -47,6 +47,11 @@ module.exports = {
         return jsonHelper.getValue(jsonPath, discordID).name;
     },
 
+    getKnowledgeFromID: function(discordID, isBot = false){
+        const jsonPath = this.getPath(isBot);
+        return jsonHelper.getValue(jsonPath, discordID).knowledge;
+    },
+
     getIDFromTag: function(tag, isBot = false) {
         const jsonPath = this.getPath(isBot);
         return jsonHelper.getKeyByFieldValue(jsonPath, 'tag', tag);
