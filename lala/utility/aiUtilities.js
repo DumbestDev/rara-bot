@@ -79,7 +79,7 @@ function generatePrompt(authorId, previousConversation = "") {
         prompt: mainPrompt(userName) + userCharacter + lalaDescription + 
             lalaPersonality + situationContext + lalaExample + 
             previousConversation + "\nLala: ",
-        stop_sequence: [ '\nYou:', `\n${userName}:`, "Lala:", "\nLala", "${userName}:"]
+        stop_sequence: [ '\nYou:', `\n${userName}:`, "Lala:", "\nLala", `${userName}:`]
     })
 }
 
